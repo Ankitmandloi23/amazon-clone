@@ -1,6 +1,8 @@
-//import { FormControlLabel, Radio, RadioGroup } from '@material-ui/core';
+import { FormControlLabel, Radio, RadioGroup } from '@mui/material';
+
 import React, {useState} from 'react'
 import "../styles/PriceCheckBox.css"
+
 
 
 const PriceCheckBox = (props) => {
@@ -26,12 +28,12 @@ const PriceCheckBox = (props) => {
             {props.list.map((price, index)=>(
                 <span className="price-range-checkbox">
                     
-                    {/* <RadioGroup defaultValue="Any" name="customized-radios" value={value}
+                    {<RadioGroup defaultValue="Any" name="customized-radios" value={value}
                     onChange = {() => handleToggle(price.id)}>
 
                         { <FormControlLabel value={price.id} control={<Radio />} label={price.name} /> }
 
-                    </RadioGroup> */}
+                    </RadioGroup> }
                 </span>
             ))}
         </div>
